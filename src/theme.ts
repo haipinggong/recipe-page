@@ -1,90 +1,102 @@
 import { createTheme } from "@mui/material/styles";
 
 declare module "@mui/material/styles" {
-  interface Color {
-    950?: string;
+  interface PaletteColor {
+    lighter?: string;
+  }
+
+  interface SimplePaletteColorOptions {
+    lighter?: string;
   }
   interface Palette {
-    yellow: Palette["primary"];
+    stone: Palette["primary"];
+    rose: Palette["primary"];
+    brown: Palette["primary"];
   }
 
   interface PaletteOptions {
-    yellow?: PaletteOptions["primary"];
+    stone?: PaletteOptions["primary"];
+    rose?: PaletteOptions["primary"];
+    brown?: PaletteOptions["primary"];
   }
 
   interface TypographyVariantsOptions {
-    fontWeightExtraBold: number;
+    fontWeightSemiBold: number;
   }
 
   interface TypographyVariants {
-    fontWeightExtraBold: number;
+    fontWeightSemiBold: number;
   }
 }
 
 let theme = createTheme({
   palette: {
-    grey: {
-      500: "#6B6B6B",
-      950: "#111111",
+    stone: {
+      dark: "#312E2C",
+      main: "#5F564D",
+      light: "#E3DDD7",
+      lighter: "#F3E5D7",
     },
-    yellow: {
-      main: "#F4D04E",
+    rose: {
+      main: "#7A284E",
+      light: "FFF7FB",
+    },
+    brown: {
+      main: "#854632",
     },
   },
   typography: {
-    fontFamily: "Figtree, sans-serif",
-    fontWeightExtraBold: 800,
+    fontFamily: "Young Serif, Outfit, sans-serif",
+    fontWeightSemiBold: 600,
   },
 });
 
 theme = createTheme(theme, {
   palette: {
-    primary: {
-      main: theme.palette.yellow.main,
-      contrastText: theme.palette.grey[950],
-    },
     text: {
-      primary: theme.palette.grey[950],
+      primary: theme.palette.stone.main,
     },
     background: {
-      default: theme.palette.yellow.main,
+      default: theme.palette.stone.lighter,
       paper: theme.palette.common.white,
     },
   },
   typography: {
-    lineHeight: 1.5,
+    lineHeight: 1,
     letterSpacing: 0,
+    fontWeight: theme.typography.fontWeightRegular,
     h1: {
-      fontWeight: theme.typography.fontWeightExtraBold,
+      fontSize: "2.25rem",
+      fontWeight: theme.typography.fontWeightRegular,
+      lineHeight: 1,
+      letterSpacing: 0,
+      //   [theme.breakpoints.up("sm")]: {
+      //     fontSize: "1.5rem",
+      //   },
+    },
+    h2: {
+      fontSize: "1.75rem",
+    },
+    h3: {
       fontSize: "1.25rem",
-      [theme.breakpoints.up("sm")]: {
-        fontSize: "1.5rem",
-      },
+      fontWeight: theme.typography.fontWeightSemiBold,
     },
     body1: {
-      fontSize: "0.875rem",
-      [theme.breakpoints.up("sm")]: {
-        fontSize: "1rem",
-      },
+      fontSize: "1rem",
     },
-    body2: {
-      fontSize: "0.75rem",
-      [theme.breakpoints.up("sm")]: {
-        fontSize: "0.875rem",
-      },
-    },
-    button: {
-      textTransform: "none",
-      fontWeight: theme.typography.fontWeightExtraBold,
-      fontSize: "0.75rem",
-      [theme.breakpoints.up("sm")]: {
-        fontSize: "0.875rem",
-      },
-    },
-    caption: {
-      fontSize: "0.875rem",
-    },
+    // button: {
+    //   textTransform: "none",
+    //   fontWeight: theme.typography.fontWeightExtraBold,
+    //   fontSize: "0.75rem",
+    //   [theme.breakpoints.up("sm")]: {
+    //     fontSize: "0.875rem",
+    //   },
+    // },
+    // caption: {
+    //   fontSize: "0.875rem",
+    // },
   },
+  //   spacing: [8, 12, 16, 24, 32, 40, 48, 128],
 });
 
 export default theme;

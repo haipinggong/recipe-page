@@ -4,6 +4,10 @@ import App from "./App.tsx";
 import theme from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import GlobalStyles from "@mui/material/GlobalStyles";
+import "@fontsource/outfit/400.css";
+import "@fontsource/outfit/600.css";
+import "@fontsource/outfit/700.css";
+import "@fontsource/young-serif/400.css";
 
 const rootElement = document.getElementById("root");
 if (!rootElement) {
