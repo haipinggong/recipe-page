@@ -17,6 +17,9 @@ export const styles: StyleProps = {
     padding: theme.spacing(5, 4, 5, 4),
     gap: 4,
   }),
+  divider: (theme) => ({
+    color: theme.palette.stone.light,
+  }),
 };
 
 export default styles;

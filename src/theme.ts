@@ -39,7 +39,7 @@ let theme = createTheme({
     },
     rose: {
       main: "#7A284E",
-      light: "FFF7FB",
+      light: "#FFF7FB",
     },
     brown: {
       main: "#854632",
