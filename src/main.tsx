@@ -16,19 +16,19 @@ if (!rootElement) {
 
 createRoot(rootElement).render(
   <StrictMode>
-    <CssBaseline />
-    <GlobalStyles
-      styles={{
-        body: {
-          minHeight: "100vh",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundColor: theme.palette.background.default,
-        },
-      }}
-    />
     <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <GlobalStyles
+        styles={{
+          body: {
+            minHeight: "100vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            backgroundColor: theme.palette.background.default,
+          },
+        }}
+      />
       <App />
     </ThemeProvider>
   </StrictMode>

@@ -62,41 +62,38 @@ theme = createTheme(theme, {
     },
   },
   typography: {
-    lineHeight: 1,
-    letterSpacing: 0,
-    fontWeight: theme.typography.fontWeightRegular,
     h1: {
       fontSize: "2.25rem",
       fontWeight: theme.typography.fontWeightRegular,
       lineHeight: 1,
       letterSpacing: 0,
+      color: theme.palette.stone.dark,
       //   [theme.breakpoints.up("sm")]: {
       //     fontSize: "1.5rem",
       //   },
     },
     h2: {
       fontSize: "1.75rem",
+      fontWeight: theme.typography.fontWeightRegular,
+      lineHeight: 1,
+      letterSpacing: 0,
+      color: theme.palette.brown.main,
     },
     h3: {
       fontSize: "1.25rem",
+      fontFamily: "Outfit, sans-serif",
       fontWeight: theme.typography.fontWeightSemiBold,
+      lineHeight: 1,
+      letterSpacing: 0,
     },
     body1: {
       fontSize: "1rem",
+      fontFamily: "Outfit, sans-serif",
+      fontWeight: theme.typography.fontWeightRegular,
+      lineHeight: 1.5,
+      letterSpacing: 0,
     },
-    // button: {
-    //   textTransform: "none",
-    //   fontWeight: theme.typography.fontWeightExtraBold,
-    //   fontSize: "0.75rem",
-    //   [theme.breakpoints.up("sm")]: {
-    //     fontSize: "0.875rem",
-    //   },
-    // },
-    // caption: {
-    //   fontSize: "0.875rem",
-    // },
   },
-  //   spacing: [8, 12, 16, 24, 32, 40, 48, 128],
 });
 
 export default theme;
