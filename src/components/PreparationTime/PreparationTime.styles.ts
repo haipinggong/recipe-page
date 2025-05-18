@@ -16,6 +16,10 @@ export const styles: StyleProps = {
   title: (theme) => ({
     color: theme.palette.rose.main,
   }),
+  descriptionItem: {
+    paddingLeft: 1,
+    gap: 2,
+  },
 };
 
 export default styles;
