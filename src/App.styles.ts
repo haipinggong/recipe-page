@@ -9,6 +9,7 @@ export const styles: StyleProps = {
     display: "flex",
     flexDirection: "column",
     maxWidth: "23.4375rem",
+    margin: "0 auto",
     backgroundColor: theme.palette.background.paper,
   }),
   textContent: (theme) => ({

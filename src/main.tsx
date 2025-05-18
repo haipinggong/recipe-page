@@ -21,10 +21,6 @@ createRoot(rootElement).render(
       <GlobalStyles
         styles={{
           body: {
-            minHeight: "100vh",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
             backgroundColor: theme.palette.background.default,
           },
         }}
