@@ -10,6 +10,7 @@ import recipe from "../../data/recipe.json";
 
 export const IngredientsSection = () => {
   const theme = useTheme();
+
   return (
     <SectionLayout>
       <Typography variant="h2">Ingredients</Typography>

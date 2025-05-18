@@ -7,6 +7,7 @@ import imageOmelette from "./assets/images/image-omelette.jpeg";
 import { PreparationTime } from "./components/PreparationTime/PreparationTime";
 import { IngredientsSection } from "./components/IngredientsSection/IngredientsSection";
 import { InstructionsSection } from "./components/InstructionsSection/InstructionsSection";
+import { NutritionSection } from "./components/NutritionSection/NutuitionSection";
 import { Title } from "./components/Title/Title";
 
 import recipe from "./data/recipe.json";
@@ -23,6 +24,7 @@ function App() {
           <Divider aria-hidden="true" flexItem sx={styles.divider} />
           <InstructionsSection />
           <Divider aria-hidden="true" flexItem sx={styles.divider} />
+          <NutritionSection />
         </Box>
       </Box>
     </>
