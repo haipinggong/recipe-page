@@ -6,6 +6,7 @@ import imageOmelette from "./assets/images/image-omelette.jpeg";
 
 import { RecipeSection } from "./components/RecipeSection/RecipeSection";
 import { PreparationTime } from "./components/PreparationTime/PreparationTime";
+import { IngredientsSection } from "./components/IngredientsSection/IngredientsSection";
 import { Title } from "./components/Title/Title";
 
 import recipe from "./data/recipe.json";
@@ -18,7 +19,7 @@ function App() {
         <Box sx={styles.textContent}>
           <Title title={recipe.title} subTitle={recipe.subTitle} />
           <PreparationTime />
-          <RecipeSection title="Ingredients" content="test" />
+          <IngredientsSection />
           <Divider aria-hidden="true" flexItem sx={styles.divider} />
           <RecipeSection title="Instructions" content="test" />
           <Divider aria-hidden="true" flexItem sx={styles.divider} />
