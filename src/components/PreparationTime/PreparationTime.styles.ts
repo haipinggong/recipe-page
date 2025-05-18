@@ -16,6 +16,11 @@ export const styles: StyleProps = {
   title: (theme) => ({
     color: theme.palette.rose.main,
   }),
+  descriptionItemList: {
+    display: "flex",
+    flexDirection: "column",
+    gap: 1,
+  },
   descriptionItem: {
     paddingLeft: 1,
     gap: 2,

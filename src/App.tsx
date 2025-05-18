@@ -17,7 +17,7 @@ function App() {
         <Box component="img" src={imageOmelette} alt="Omelette" />
         <Box sx={styles.textContent}>
           <Title title={recipe.title} subTitle={recipe.subTitle} />
-          <PreparationTime content="test" />
+          <PreparationTime />
           <RecipeSection title="Ingredients" content="test" />
           <Divider aria-hidden="true" flexItem sx={styles.divider} />
           <RecipeSection title="Instructions" content="test" />

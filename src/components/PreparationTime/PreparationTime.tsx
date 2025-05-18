@@ -14,18 +14,19 @@ import recipe from "../../data/recipe.json";
 
 export const PreparationTime = () => {
   const theme = useTheme();
-  const [preparationTime] = recipe.preparationTime;
 
   return (
     <Box component="section" sx={styles.main}>
       <Typography variant="h3" component="h2" sx={styles.title}>
         Preparation Time
       </Typography>
-      <List disablePadding>
-        <ListItem disablePadding sx={styles.descriptionItem}>
-          <Bullet color={theme.palette.rose.main} />
-          <LabeledDescription {...preparationTime} />
-        </ListItem>
+      <List disablePadding sx={styles.descriptionItemList}>
+        {recipe.preparationTime.map((item) => (
+          <ListItem disablePadding sx={styles.descriptionItem}>
+            <Bullet color={theme.palette.rose.main} />
+            <LabeledDescription {...item} />
+          </ListItem>
+        ))}
       </List>
     </Box>
   );
