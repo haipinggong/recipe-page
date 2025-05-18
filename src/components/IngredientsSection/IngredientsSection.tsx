@@ -15,7 +15,7 @@ export const IngredientsSection = () => {
       <Typography variant="h2">Ingredients</Typography>
       <List disablePadding sx={styles.descriptionItemList}>
         {recipe.ingredients.map((item) => (
-          <ListItem disablePadding sx={styles.descriptionItem}>
+          <ListItem key={item} disablePadding sx={styles.descriptionItem}>
             <Bullet color={theme.palette.rose.main} />
             <Typography>{item}</Typography>
           </ListItem>

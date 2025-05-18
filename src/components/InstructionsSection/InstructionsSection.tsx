@@ -12,7 +12,7 @@ export const InstructionsSection = () => {
       <Typography variant="h2">Instructions</Typography>
       <List disablePadding sx={styles.descriptionItemList}>
         {recipe.instructions.map((item) => (
-          <ListItem disablePadding sx={styles.descriptionItem}>
+          <ListItem key={item.label} disablePadding sx={styles.descriptionItem}>
             <LabeledDescription {...item} />
           </ListItem>
         ))}

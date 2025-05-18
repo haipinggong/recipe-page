@@ -22,7 +22,7 @@ export const PreparationTime = () => {
       </Typography>
       <List disablePadding sx={styles.descriptionItemList}>
         {recipe.preparationTime.map((item) => (
-          <ListItem disablePadding sx={styles.descriptionItem}>
+          <ListItem key={item.label} disablePadding sx={styles.descriptionItem}>
             <Bullet color={theme.palette.rose.main} />
             <LabeledDescription {...item} />
           </ListItem>
