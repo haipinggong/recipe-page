@@ -4,9 +4,9 @@ import Divider from "@mui/material/Divider";
 
 import imageOmelette from "./assets/images/image-omelette.jpeg";
 
-import { RecipeSection } from "./components/RecipeSection/RecipeSection";
 import { PreparationTime } from "./components/PreparationTime/PreparationTime";
 import { IngredientsSection } from "./components/IngredientsSection/IngredientsSection";
+import { InstructionsSection } from "./components/InstructionsSection/InstructionsSection";
 import { Title } from "./components/Title/Title";
 
 import recipe from "./data/recipe.json";
@@ -21,9 +21,8 @@ function App() {
           <PreparationTime />
           <IngredientsSection />
           <Divider aria-hidden="true" flexItem sx={styles.divider} />
-          <RecipeSection title="Instructions" content="test" />
+          <InstructionsSection />
           <Divider aria-hidden="true" flexItem sx={styles.divider} />
-          <RecipeSection title="Nutrition" content="test" />
         </Box>
       </Box>
     </>
