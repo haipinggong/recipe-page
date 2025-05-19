@@ -13,7 +13,7 @@ export const NutritionSection = () => {
     <SectionLayout>
       <Typography variant="h2">Nutrition</Typography>
       <Typography>{recipe.nutrition.subTitle}</Typography>
-      <Table aria-label="nutrition table">
+      <Table aria-label="nutrition table" sx={styles.table}>
         <TableHead sx={styles.tableHead}>
           <TableRow>
             <TableCell>Nutuition</TableCell>
@@ -22,12 +22,13 @@ export const NutritionSection = () => {
         </TableHead>
         <TableBody>
           {recipe.nutrition.table.map((row) => (
-            <TableRow
-              key={row.name}
-              sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-            >
-              <TableCell>{row.name}</TableCell>
-              <TableCell>{row.value}</TableCell>
+            <TableRow key={row.name} sx={styles.row}>
+              <TableCell sx={styles.nameTableCell}>
+                <Typography>{row.name}</Typography>
+              </TableCell>
+              <TableCell sx={styles.valueTableCell}>
+                <Typography sx={styles.value}>{row.value}</Typography>
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>
