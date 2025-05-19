@@ -8,15 +8,32 @@ export const styles: StyleProps = {
   main: (theme) => ({
     display: "flex",
     flexDirection: "column",
-    maxWidth: "23.4375rem",
     margin: "0 auto",
     backgroundColor: theme.palette.background.paper,
+    [theme.breakpoints.up("sm")]: {
+      maxWidth: "38.5rem",
+      borderRadius: 3,
+      padding: 5,
+      gap: 5,
+    },
+    [theme.breakpoints.up("md")]: {
+      maxWidth: "46rem",
+    },
+  }),
+  image: (theme) => ({
+    [theme.breakpoints.up("sm")]: {
+      borderRadius: 1.5,
+      aspectRatio: "16/9",
+    },
   }),
   textContent: (theme) => ({
     display: "flex",
     flexDirection: "column",
     padding: theme.spacing(5, 4, 5, 4),
     gap: 4,
+    [theme.breakpoints.up("sm")]: {
+      padding: 0,
+    },
   }),
   divider: (theme) => ({
     color: theme.palette.stone.light,

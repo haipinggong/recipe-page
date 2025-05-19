@@ -16,7 +16,12 @@ function App() {
   return (
     <>
       <Box component="main" sx={styles.main}>
-        <Box component="img" src={imageOmelette} alt="Omelette" />
+        <Box
+          component="img"
+          src={imageOmelette}
+          alt="Omelette"
+          sx={styles.image}
+        />
         <Box sx={styles.textContent}>
           <Title title={recipe.title} subTitle={recipe.subTitle} />
           <PreparationTime />

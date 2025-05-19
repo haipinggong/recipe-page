@@ -30,6 +30,15 @@ declare module "@mui/material/styles" {
 }
 
 let theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 375,
+      md: 768,
+      lg: 1440,
+      xl: 1536,
+    },
+  },
   palette: {
     stone: {
       dark: "#312E2C",
@@ -68,9 +77,9 @@ theme = createTheme(theme, {
       lineHeight: 1,
       letterSpacing: 0,
       color: theme.palette.stone.dark,
-      //   [theme.breakpoints.up("sm")]: {
-      //     fontSize: "1.5rem",
-      //   },
+      [theme.breakpoints.up("sm")]: {
+        fontSize: "2.5rem",
+      },
     },
     h2: {
       fontSize: "1.75rem",
