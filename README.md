@@ -19,7 +19,7 @@ Create a recipe page on desktop, tablet and mobile screen
 
 ### Screenshot
 
-![Recipe Page](./public/screenshot.jpg)
+![Recipe Page](./public/screenshot.png)
 
 ### Links
 
