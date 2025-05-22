@@ -15,6 +15,8 @@ A recipe page
 
 ### The challenge
 
+Create a recipe page on desktop, tablet and mobile screen
+
 ### Screenshot
 
 ![Recipe Page](./public/screenshot.jpg)
