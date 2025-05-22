@@ -33,8 +33,8 @@ let theme = createTheme({
   breakpoints: {
     values: {
       xs: 0,
-      sm: 375,
-      md: 768,
+      sm: 471,
+      md: 864,
       lg: 1440,
       xl: 1536,
     },

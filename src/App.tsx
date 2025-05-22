@@ -14,8 +14,8 @@ import recipe from "./data/recipe.json";
 
 function App() {
   return (
-    <>
-      <Box component="main" sx={styles.main}>
+    <Box component="main" sx={styles.main}>
+      <Box sx={styles.card}>
         <Box
           component="img"
           src={imageOmelette}
@@ -32,7 +32,7 @@ function App() {
           <NutritionSection />
         </Box>
       </Box>
-    </>
+    </Box>
   );
 }
 

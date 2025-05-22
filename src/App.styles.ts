@@ -6,6 +6,12 @@ interface StyleProps {
 
 export const styles: StyleProps = {
   main: (theme) => ({
+    padding: 0,
+    [theme.breakpoints.up("sm")]: {
+      padding: theme.spacing(16, 6),
+    },
+  }),
+  card: (theme) => ({
     display: "flex",
     flexDirection: "column",
     margin: "0 auto",
