@@ -29,7 +29,7 @@ export const styles: StyleProps = {
   image: (theme) => ({
     [theme.breakpoints.up("sm")]: {
       borderRadius: 1.5,
-      aspectRatio: "16/9",
+      aspectRatio: "2.19 / 1",
     },
   }),
   textContent: (theme) => ({
