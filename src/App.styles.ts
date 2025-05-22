@@ -18,7 +18,7 @@ export const styles: StyleProps = {
     backgroundColor: theme.palette.background.paper,
     [theme.breakpoints.up("sm")]: {
       maxWidth: "38.5rem",
-      borderRadius: 3,
+      borderRadius: 6,
       padding: 5,
       gap: 5,
     },
@@ -28,7 +28,7 @@ export const styles: StyleProps = {
   }),
   image: (theme) => ({
     [theme.breakpoints.up("sm")]: {
-      borderRadius: 1.5,
+      borderRadius: 3,
       aspectRatio: "2.19 / 1",
     },
   }),

@@ -11,7 +11,7 @@ export const styles: StyleProps = {
     gap: 2,
     padding: 3,
     backgroundColor: theme.palette.rose.light,
-    borderRadius: "12px",
+    borderRadius: 3,
   }),
   title: (theme) => ({
     color: theme.palette.rose.main,
