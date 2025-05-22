@@ -17,7 +17,7 @@ A recipe page
 
 ### Screenshot
 
-![Recipe Page](./screenshot.jpg)
+![Recipe Page](./public/screenshot.jpg)
 
 ### Links
 
